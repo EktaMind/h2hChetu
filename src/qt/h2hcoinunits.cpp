@@ -29,8 +29,8 @@ bool H2hcoinUnits::valid(int unit)
     switch(unit)
     {
     case H2H:
-    case mBTC:
-    case uBTC:
+    case mH2H:
+    case uH2H:
     case SAT:
         return true;
     default:
@@ -43,8 +43,8 @@ QString H2hcoinUnits::longName(int unit)
     switch(unit)
     {
     case H2H: return QString("H2H");
-    case mBTC: return QString("mBTC");
-    case uBTC: return QString::fromUtf8("µBTC (bits)");
+    case mBTC: return QString("mH2H");
+    case uBTC: return QString::fromUtf8("µH2H (bits)");
     case SAT: return QString("Satoshi (sat)");
     default: return QString("???");
     }
